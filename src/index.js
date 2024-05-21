@@ -85,7 +85,7 @@ class Speedometer extends Component {
             const circleDegree = 90 + (index * perLevelDegree);
             return (
               <View
-                key={level.name}
+                key={level?.name || index}
                 style={[style.halfCircle, {
                   backgroundColor: level.activeBarColor,
                   width: currentSize / 2,
